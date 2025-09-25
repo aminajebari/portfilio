@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amina Jebari - Portfolio</title>
+    <!-- Added EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Portfolio</div>
+            
+            <div class="nav-menu">
+                <button class="nav-link active" data-section="home">Home</button>
+                <button class="nav-link" data-section="about">About</button>
+                <button class="nav-link" data-section="skills">Skills</button>
+                <button class="nav-link" data-section="projects">Projects</button>
+                <button class="nav-link" data-section="experience">Experience</button>
+                <button class="nav-link" data-section="education">Education</button>
+                <button class="nav-link" data-section="contact">Contact</button>
+                <!-- Added animated navigation indicator -->
+                <div class="nav-indicator"></div>
+            </div>
+
+            <!-- Added name text and updated theme toggle layout -->
+            <!-- Removed name text from navbar -->
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-toggle">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home/Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="highlight">Amina</span> <span class="highlight2">Jebari</span></h1>
+                <h3>ICT Engineering Student</h3>
+                <p>
+                    ICT engineering student passionate about innovation, with skills in telecoms, software, and smart systems. I aim to build impactful, real-world tech solutions through teamwork and creativity.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" data-section="about">Learn More</button>
+                    <button class="btn btn-outline" data-section="contact">Contact Me</button>
+                </div>
+            </div>
+            <div class="hero-img floating-image">
+                <!-- Added floating-image class for smooth up-down animation -->
+                <img src="amina.jpg" alt="Amina Jebari" />
+                <!-- Changed from placeholder to actual amina.jpg image -->
+            </div>
+        </div>
+        
+        <footer class="hero-footer">
+            <div class="social-icons">
+                <a href="https://github.com/aminajebari"><img src="github 1.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/amina-jebari-7822b0347/"><img src="linkedin 2.png" alt="LinkedIn"></a>
+                <a href="mailto:amina.jebari@supcom.tn"><img src="mail 2.png" alt="Email"></a>
+            </div>
+        </footer>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+                <div class="about-content">
+                    <p>
+                        As an ICT Engineering student at SUP'COM, I thrive at the intersection of intelligent systems and impactful innovation. My work revolves around blending artificial intelligence, software engineering, and the Internet of Things to build smarter, more adaptive solutions. Whether it's training deep learning models for healthcare diagnostics or designing data-driven systems for predictive insight, I aim to turn complex problems into practical, scalable technologies. I'm especially driven by the challenge of making machines not just learn — but understand.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <img src="web.png" alt="Web Dev Icon">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Web Development</h3>
+                        <p class="card-description">I build functional and responsive websites using HTML, CSS, JavaScript, and frameworks such as React. I focus on clean code, usability, and performance.</p>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">
+                        <img src="machine-learning.png" alt="ML Icon">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Machine Learning</h3>
+                        <p class="card-description">I apply machine learning techniques to solve real-world problems like detecting patterns in medical images. I use Python, scikit-learn, and TensorFlow.</p>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">
+                        <img src="data-science.png" alt="Data Icon">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Data Science</h3>
+                        <p class="card-description">I enjoy analyzing and visualizing data to uncover insights and make data-driven decisions using Pandas, Matplotlib, and Excel.</p>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">
+                        <img src="cloud.png" alt="Cloud Icon">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Cloud Computing</h3>
+                        <p class="card-description">I deploy apps using platforms like Heroku and Firebase, and I'm learning AWS to ensure my apps are scalable and reliable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <div class="section-divider"></div>
+                <div class="skills-description">
+                    <p>A blend of technical knowledge, interpersonal strengths, and multilingual proficiency acquired through my academic journey and diverse project work.</p>
+                </div>
+            </div>
+
+            <div class="skills-container">
+                <div class="skills-grid">
+                    <!-- Technical Skills -->
+                    <div class="skills-card">
+                        <h3>Technical Skills</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Machine Learning/Deep Learning</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">React/Next.js</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">C/C++</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">SQL/MATLAB</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">JavaScript/TypeScript</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Node.js/Express</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skills-card">
+                        <h3>Soft Skills</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Problem Solving</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Team Collaboration</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Communication</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Time Management</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Adaptability</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Leadership</span>
+                                    <span class="skill-percentage">78%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="78"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Project Management</span>
+                                    <span class="skill-percentage">82%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="82"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Linguistic Skills -->
+                    <div class="skills-card">
+                        <h3>Linguistic Skills</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Arabic</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Turkish</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">French</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">English</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">German</span>
+                                    <span class="skill-percentage">50%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="50"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <div class="section-divider"></div>
+                <div class="projects-description">
+                    <p>Here are some of the projects I've worked on, showcasing my skills and experience in different areas of computer science and engineering.</p>
+                </div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-container">
+                <button class="filter-btn active" onclick="filterProjects('all')">All</button>
+                <button class="filter-btn" onclick="filterProjects('ai-ml')">AI/ML</button>
+                <button class="filter-btn" onclick="filterProjects('web-dev')">Web Development</button>
+                <button class="filter-btn" onclick="filterProjects('iot')">IoT</button>
+                <button class="filter-btn" onclick="filterProjects('programming')">Programming</button>
+                <button class="filter-btn" onclick="filterProjects('social')">Social Impact</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-container">
+                <div class="projects-grid">
+                    <!-- Agent GenAI Assurance -->
+                    <div class="project-card" data-category="ai-ml">
+                        <div class="project-image">
+                            <img src="next.jpg" alt="AI Chatbot">
+                            <div class="project-overlay">
+                                <span class="project-type">AI/ML</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Agent GenAI Assurance</h3>
+                            <p>AI-powered chatbot designed for client assistance, providing clients with instant support and information using generative AI technology.</p>
+                            <div class="project-tags">
+                                <span class="tag">AI</span>
+                                <span class="tag">Chatbot</span>
+                                <span class="tag">NLP</span>
+                                <span class="tag">bank-client</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn-secondary">Code</button>
+                                <button class="btn-primary">Live Demo</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Personal Portfolio Website -->
+                    <div class="project-card" data-category="web-dev">
+                        <div class="project-image">
+                            <img src="portfilio.jpg" alt="Portfolio Website">
+                            <div class="project-overlay">
+                                <span class="project-type">Web Development</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Personal Portfolio Website</h3>
+                            <p>Modern, responsive portfolio website built with HTML, CSS, JavaScript, and React to showcase my skills and projects.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">React</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn-secondary">Code</button>
+                                <button class="btn-primary">Live Demo</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wireless Sensor Network -->
+                    <div class="project-card" data-category="iot">
+                        <div class="project-image">
+                            <img src="wirless.png" alt="Wireless Sensor Network">
+                            <div class="project-overlay">
+                                <span class="project-type">IoT</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Wireless Sensor Network</h3>
+                            <p>Low-power wireless sensor network designed for environmental monitoring, collecting and transmitting data efficiently.</p>
+                            <div class="project-tags">
+                                <span class="tag">IoT</span>
+                                <span class="tag">Sensors</span>
+                                <span class="tag">Wireless</span>
+                                <span class="tag">Monitoring</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn-secondary">Code</button>
+                                <button class="btn-primary">Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Smart Antenna Design -->
+                    <div class="project-card" data-category="iot">
+                        <div class="project-image">
+                            <img src="antenna.png" alt="Smart Antenna">
+                            <div class="project-overlay">
+                                <span class="project-type">IoT/5G</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Smart Antenna Design</h3>
+                            <p>Created and simulated smart antenna designs for 5G and IoT applications using HFSS and CST simulation software.</p>
+                            <div class="project-tags">
+                                <span class="tag">5G</span>
+                                <span class="tag">IoT</span>
+                                <span class="tag">HFSS</span>
+                                <span class="tag">CST</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn-secondary">Simulation</button>
+                                <button class="btn-primary">Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FlyGreen -->
+                    <div class="project-card" data-category="social">
+                        <div class="project-image">
+                            <img src="flygreen.png" alt="FlyGreen">
+                            <div class="project-overlay">
+                                <span class="project-type">Green Tech</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>FlyGreen</h3>
+                            <p>Innovative energy-producing bicycle integrated with solar panels, combining sustainable transportation with renewable energy generation.</p>
+                            <div class="project-tags">
+                                <span class="tag">Green Energy</span>
+                                <span class="tag">Solar</span>
+                                <span class="tag">Sustainability</span>
+                                <span class="tag">Innovation</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn-secondary">Design</button>
+                                <button class="btn-primary">Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EcoSchool PACTE -->
+                    <div class="project-card" data-category="social">
+                        <div class="project-image">
+                            <img src="ecoschool.png" alt="EcoSchool">
+                            <div class="project-overlay">
+                                <span class="project-type">Social Impact</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>EcoSchool (PACTE)</h3>
+                            <p>Comprehensive school improvement project at Imam Sahnoun school including cleaning, planting, recycling, library creation, and sports area development.</p>
+                            <div class="project-tags">
+                                <span class="tag">Social Impact</span>
+                                <span class="tag">Education</span>
+                                <span class="tag">Environment</span>
+                                <span class="tag">Community</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn-secondary">Gallery</button>
+                                <button class="btn-primary">Impact</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Application IBAY -->
+                    <div class="project-card" data-category="web-dev">
+                        <div class="project-image">
+                            <img src="ibay.png" alt="IBAY Application">
+                            <div class="project-overlay">
+                                <span class="project-type">App Development</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Application IBAY</h3>
+                            <p>Student life and time management application with complete marketing plan, naming strategy, and 1-minute pitch presentation.</p>
+                            <div class="project-tags">
+                                <span class="tag">App Development</span>
+                                <span class="tag">Marketing</span>
+                                <span class="tag">Student Life</span>
+                                <span class="tag">Time Management</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn-secondary">Pitch</button>
+                                <button class="btn-primary">Demo</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Programme en C -->
+                    <div class="project-card" data-category="programming">
+                        <div class="project-image">
+                            <img src="c.jpg" alt="C Programming Game">
+                            <div class="project-overlay">
+                                <span class="project-type">Programming</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>C Programming Games</h3>
+                            <p>Collection of interactive games developed in C programming language including "Hangman" (Pendu) and "Guess the Number" games.</p>
+                            <div class="project-tags">
+                                <span class="tag">C Programming</span>
+                                <span class="tag">Games</span>
+                                <span class="tag">Algorithms</span>
+                                <span class="tag">Logic</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn-secondary">Code</button>
+                                <button class="btn-primary">Play</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience & Leadership</h2>
+                <div class="section-divider"></div>
+                <div class="experience-description">
+                    <p>A combination of professional practice, leadership opportunities, and community service has helped define my strengths and perspective.</p>
+                </div>
+            </div>
+
+            <div class="experience-container">
+                <div class="section-subtitle">
+                    <h3>Work Experience</h3>
+                </div>
+
+                <div class="experience-timeline">
+                    <div class="experience-card">
+                        <div class="experience-icon">
+                            <span>💼</span>
+                        </div>
+                        <div class="experience-content">
+                            <div class="experience-header">
+                                <h4>Teleoperateur</h4>
+                                <span class="company">Centercall</span>
+                                <span class="duration">June 2024 - August 2024</span>
+                            </div>
+                            <p class="experience-description">
+                                Worked as a teleoperator handling customer service calls. This experience significantly improved my French language fluency.
+                            </p>
+                            <div class="experience-tags">
+                                <span class="tag">Customer Service</span>
+                                <span class="tag">French</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-card">
+                        <div class="experience-icon">
+                            <span>🏢</span>
+                        </div>
+                        <div class="experience-content">
+                            <div class="experience-header">
+                                <h4>Intern</h4>
+                                <span class="company">Tunisie Telecom</span>
+                                <span class="duration">July 20 - August 20, 2025</span>
+                            </div>
+                            <p class="experience-description">
+                                Completed an internship at Tunisie Telecom's Centre Urbain Nord, gaining hands-on experience in telecommunications.
+                            </p>
+                            <div class="experience-tags">
+                                <span class="tag">Telecommunications</span>
+                                <span class="tag">Networks</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-card">
+                        <div class="experience-icon">
+                            <span>🤸‍♀️</span>
+                        </div>
+                        <div class="experience-content">
+                            <div class="experience-header">
+                                <h4>Gymnastics Coach</h4>
+                                <span class="company">Private Coaching</span>
+                                <span class="duration">Summer 2023</span>
+                            </div>
+                            <p class="experience-description">
+                                Provided gymnastics coaching to baccalaureate students, developing training programs and mentoring skills.
+                            </p>
+                            <div class="experience-tags">
+                                <span class="tag">Coaching</span>
+                                <span class="tag">Leadership</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-subtitle">
+                    <h3>Leadership & Management</h3>
+                </div>
+
+                <div class="leadership-grid">
+                    <div class="leadership-card">
+                        <div class="leadership-icon">
+                            <span>🚀</span>
+                        </div>
+                        <div class="leadership-content">
+                            <h4>Active Member</h4>
+                            <span class="organization">SUPCOM Junior Entreprise</span>
+                            <p>A combination of professional practice, leadership opportunities, and community service has helped define my strengths and perspective.</p>
+                        </div>
+                    </div>
+
+                    <div class="leadership-card">
+                        <div class="leadership-icon">
+                            <span>💻</span>
+                        </div>
+                        <div class="leadership-content">
+                            <h4>Club Member</h4>
+                            <span class="organization">Google Developer Group (GDG)</span>
+                            <p>Engaged in Google technology workshops, developer meetups, and collaborative coding sessions.</p>
+                        </div>
+                    </div>
+
+                    <div class="leadership-card">
+                        <div class="leadership-icon">
+                            <span>🤖</span>
+                        </div>
+                        <div class="leadership-content">
+                            <h4>Active Member</h4>
+                            <span class="organization">Machine Learning Society (MLS)</span>
+                            <p>Participated in machine learning research projects and AI/ML workshops.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education & Certifications</h2>
+                <div class="section-divider"></div>
+                <div class="education-description">
+                    <p>My academic background and professional certifications that have shaped my knowledge and skills in ICT engineering and technology.</p>
+                </div>
+            </div>
+
+            <div class="education-container">
+                <div class="education-section-content">
+                    <div class="section-subtitle">
+                        <h3>🎓 Academic Education</h3>
+                    </div>
+                    
+                    <div class="education-timeline">
+                        <div class="education-item">
+                            <div class="education-icon">
+                                <span>🎓</span>
+                            </div>
+                            <div class="education-content">
+                                <div class="education-header">
+                                    <h4>ICT Engineering</h4>
+                                    <span class="institution">Higher School of Communication (SUP'COM)</span>
+                                    <span class="duration">2024 - Present | Tunisia</span>
+                                </div>
+                                <p class="education-description">
+                                    Specializing in Information and Communication Technologies with focus on AI, machine learning, and software engineering. Active member of various technical clubs and organizations including Junior Entreprise, GDG, and MLS.
+                                </p>
+                                <div class="education-highlights">
+                                    <span class="highlight-tag">Artificial Intelligence</span>
+                                    <span class="highlight-tag">Software Engineering</span>
+                                    <span class="highlight-tag">Telecommunications</span>
+                                    <span class="highlight-tag">IoT Systems</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="education-item">
+                            <div class="education-icon">
+                                <span>📚</span>
+                            </div>
+                            <div class="education-content">
+                                <div class="education-header">
+                                    <h4>Preparatory School - Physics-Chemistry</h4>
+                                    <span class="institution">Preparatory Institute for Engineering Studies of Tunis (IPEIT)</span>
+                                    <span class="duration">2022 - 2024 | Tunisia</span>
+                                </div>
+                                <p class="education-description">
+                                    Focused on advanced studies in mathematics, physics, and computer science fundamentals. Built strong analytical and problem-solving skills essential for engineering studies.
+                                </p>
+                                <div class="education-highlights">
+                                    <span class="highlight-tag">Advanced Mathematics</span>
+                                    <span class="highlight-tag">Physics</span>
+                                    <span class="highlight-tag">Computer Science</span>
+                                    <span class="highlight-tag">Problem Solving</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certifications-section">
+                    <div class="section-subtitle">
+                        <h3>🏆 Professional Certifications</h3>
+                    </div>
+
+                    <div class="certifications-grid">
+                        <div class="certification-category">
+                            <h4>🌐 Networking & Security</h4>
+                            
+                            <div class="certification-item">
+                                <div class="cert-icon">
+                                    <span>🔒</span>
+                                </div>
+                                <div class="cert-content">
+                                    <h5>CCNA 1 Certification</h5>
+                                    <span class="cert-provider">Cisco Networking Academy</span>
+                                    <p>Introduction to Networks - Fundamentals of networking concepts, protocols, and network access technologies.</p>
+                                </div>
+                            </div>
+
+                            <div class="certification-item">
+                                <div class="cert-icon">
+                                    <span>🛡️</span>
+                                </div>
+                                <div class="cert-content">
+                                    <h5>Introduction to Cybersecurity</h5>
+                                    <span class="cert-provider">Cisco NetAcad</span>
+                                    <p>Comprehensive overview of cybersecurity principles, threats, and protection strategies.</p>
+                                </div>
+                            </div>
+                                                
+                            <div class="certification-item">
+                                <div class="cert-icon">
+                                    <span>📱</span>
+                                </div>
+                                <div class="cert-content">
+                                    <h5>Exploring Android Security</h5>
+                                    <span class="cert-provider">CyberCamp</span>
+                                    <p>Mobile security fundamentals focusing on Android platform security mechanisms and vulnerabilities.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="certification-category">
+                            <h4>📊 MATLAB Specializations</h4>
+                            
+                            <div class="matlab-certs">
+                                <div class="matlab-cert-item">
+                                    <span class="matlab-icon">📈</span>
+                                    <div class="matlab-content">
+                                        <h6>Signal Generation and Resampling</h6>
+                                        <span class="cert-provider">MathWorks</span>
+                                    </div>
+                                </div>
+
+                                <div class="matlab-cert-item">
+                                    <span class="matlab-icon">🔍</span>
+                                    <div class="matlab-content">
+                                        <h6>Spectral Analysis Techniques</h6>
+                                        <span class="cert-provider">MathWorks</span>
+                                    </div>
+                                </div>
+
+                                <div class="matlab-cert-item">
+                                    <span class="matlab-icon">⏱️</span>
+                                    <div class="matlab-content">
+                                        <h6>Time Frequency Analysis</h6>
+                                        <span class="cert-provider">MathWorks</span>
+                                    </div>
+                                </div>
+
+                                <div class="matlab-cert-item">
+                                    <span class="matlab-icon">🔧</span>
+                                    <div class="matlab-content">
+                                        <h6>Filter Design and Analysis Methods</h6>
+                                        <span class="cert-provider">MathWorks</span>
+                                    </div>
+                                </div>
+
+                                <div class="matlab-cert-item">
+                                    <span class="matlab-icon">🖼️</span>
+                                    <div class="matlab-content">
+                                        <h6>Image Processing Onramp</h6>
+                                        <span class="cert-provider">MathWorks</span>
+                                    </div>
+                                </div>
+
+                                <div class="matlab-cert-item">
+                                    <span class="matlab-icon">📡</span>
+                                    <div class="matlab-content">
+                                        <h6>Signal Processing Onramp</h6>
+                                        <span class="cert-provider">MathWorks</span>
+                                    </div>
+                                </div>
+
+                                <div class="matlab-cert-item">
+                                    <span class="matlab-icon">🚀</span>
+                                    <div class="matlab-content">
+                                        <h6>MATLAB Onramp</h6>
+                                        <span class="cert-provider">MathWorks</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-gained-section">
+                        <div class="section-subtitle">
+                            <h3>💡 Key Skills Acquired</h3>
+                        </div>
+                        
+                        <div class="skills-categories">
+                            <div class="skill-category">
+                                <h4>Technical Skills</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Network Configuration</span>
+                                    <span class="skill-tag">Cybersecurity</span>
+                                    <span class="skill-tag">Signal Processing</span>
+                                    <span class="skill-tag">Image Processing</span>
+                                    <span class="skill-tag">MATLAB Programming</span>
+                                    <span class="skill-tag">Mobile Security</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-category">
+                                <h4>Analytical Skills</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Spectral Analysis</span>
+                                    <span class="skill-tag">Filter Design</span>
+                                    <span class="skill-tag">Time-Frequency Analysis</span>
+                                    <span class="skill-tag">Problem Solving</span>
+                                    <span class="skill-tag">Critical Thinking</span>
+                                    <span class="skill-tag">Research Methods</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-divider"></div>
+                <div class="contact-description">
+                    <p>I'm always open to discussing new opportunities, collaborations, or just having a conversation about technology and innovation. Feel free to reach out!</p>
+                </div>
+            </div>
+
+            <div class="main-contact-section">
+                <div class="contact-info-section">
+                    <h3>📞 Contact Information</h3>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <span>📧</span>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>amina.jebari@supcom.tn</p>
+                                <a href="mailto:amina.jebari@supcom.tn" class="contact-link">Send Email</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <span>📱</span>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p>+216 21 033 439</p>
+                                <a href="tel:+21621033439" class="contact-link">Call Now</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <span>📍</span>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Ben Arous, Tunisia</p>
+                                <a href="https://maps.google.com/?q=Ben+Arous,+Tunisia" target="_blank" class="contact-link">View Map</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-section">
+                    <div class="form-container">
+                        <h3>💌 Send Me a Message</h3>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-icon">✈️</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="additional-info-section">
+                <div class="social-section">
+                    <h3>🌐 Connect With Me</h3>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/amina-jebari-7822b0347" target="_blank" class="social-link">
+                            <span class="social-icon">💼</span>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/aminajebari" target="_blank" class="social-link">
+                            <span class="social-icon">💻</span>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="mailto:amina.jebari@supcom.tn" class="social-link">
+                            <span class="social-icon">📧</span>
+                            <span>Email</span>
+                        </a>
+                        <a href="tel:+21621033439" class="social-link">
+                            <span class="social-icon">📱</span>
+                            <span>Phone</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="availability-section">
+                    <h3>⏰ Availability</h3>
+                    <div class="availability-info">
+                        <div class="availability-item">
+                            <span class="availability-icon">🎓</span>
+                            <div class="availability-text">
+                                <h4>Academic Projects</h4>
+                                <p>Available for collaborative research and academic projects</p>
+                            </div>
+                        </div>
+                        <div class="availability-item">
+                            <span class="availability-icon">💼</span>
+                            <div class="availability-text">
+                                <h4>Internships</h4>
+                                <p>Open to internship opportunities in AI, IoT, and software development</p>
+                            </div>
+                        </div>
+                        <div class="availability-item">
+                            <span class="availability-icon">🤝</span>
+                            <div class="availability-text">
+                                <h4>Networking</h4>
+                                <p>Always interested in connecting with fellow engineers and tech enthusiasts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quick-contact-summary">
+                <div class="summary-card">
+                    <h3>Let's Build Something Amazing Together!</h3>
+                    <p>Whether you have a project idea, want to collaborate, or just want to chat about technology, I'd love to hear from you. As an ICT Engineering student passionate about AI and innovation, I'm always excited to explore new opportunities and connections.</p>
+                    <div class="quick-actions">
+                        <a href="mailto:amina.jebari@supcom.tn" class="quick-action-btn primary">
+                            <span>📧</span>
+                            Email Me
+                        </a>
+                        <a href="tel:+21621033439" class="quick-action-btn secondary">
+                            <span>📱</span>
+                            Call Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Added footer with copyright notice -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Amina Jebari. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
