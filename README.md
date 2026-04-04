@@ -1,14 +1,52 @@
-# Amina_Jebari's portfilio
-This portfolio showcases my academic and technical journey as a second-year ICT Engineering student at SUP'COM. It highlights my specialization in enterprise network design, security protocols, and web development for educational platforms. Built with semantic HTML5 and modular CSS, the site emphasizes accessibility, clarity, and professional aesthetics.
+# 💼 Portfolio – Amina Jebari
 
-Key sections include:
+Welcome to my personal portfolio repository! 🚀  
+I’m a software engineering student passionate about **AI, full-stack development, and problem-solving**.
 
-About Me: A concise overview of my background, skills, and interests.
+---
 
-Projects: Detailed examples of my work in networking, documentation, and web development, including LMS prototypes and technical reports.
+## 👩‍💻 About Me
 
-Skills: A structured presentation of my competencies in programming, system analysis, and technical writing.
+- 🎓 Engineering student at SUP’COM  
+- 🤖 Interested in Artificial Intelligence & Machine Learning  
+- 🌐 Full Stack Developer (Frontend + Backend)  
+- 📊 Passionate about data-driven solutions  
 
-Contact: A simple, accessible form for professional outreach and collaboration.
+---
 
-Designed with educational clarity and responsive layout principles, this portfolio reflects my commitment to making complex technical concepts accessible and engaging.
+## 🛠️ Tech Stack
+
+### Languages
+- Python
+- JavaScript
+- TypeScript
+- C / C++
+
+### Frontend
+- React
+- HTML / CSS
+- TailwindCSS
+
+### Backend
+- Node.js
+- Express
+
+
+### Tools & Technologies
+- Git & GitHub
+
+- REST APIs
+
+---
+
+
+
+
+
+## 📫 Contact Me
+
+- 📧 Email: amina.jebari@supcom.tn  
+- 💼 LinkedIn: https://linkedin.com/in/YOUR_PROFILE  
+
+
+---
