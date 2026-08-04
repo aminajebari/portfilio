@@ -1585,3 +1585,46 @@ section {
 .floating-image {
   animation: floatingImage 3s ease-in-out infinite;
 }
+.skills-list.badges{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:20px;
+}
+
+.skill-badge{
+    display:inline-block;
+    padding:10px 18px;
+    border-radius:999px;
+    background:#e7b26dea;
+    border:1px solid #d9e4ff;
+    color:#1f2937;
+    font-size:.95rem;
+    font-weight:500;
+    transition:.3s;
+}
+
+.skill-badge:hover{
+    background:#e7e4dd;
+    color:#8a5c1f89;
+    transform:translateY(-3px);
+}
+
+.language-list{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    margin-top:20px;
+}
+
+.language-item strong{
+    display:block;
+    margin-bottom:5px;
+    font-size:1rem;
+}
+
+.language-item p{
+    color:#6b7280;
+    margin:0;
+    font-size:.95rem;
+}
